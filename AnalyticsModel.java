@@ -45,8 +45,7 @@ public class AnalyticsModel {
             @Nullable String text,
             @NonNull String phone,
             @Nullable String email,
-            @NonNull Date createDate
-    ) {
+            @NonNull Date createDate) {
         mSection = section;
         mSubsection = subsection;
         mCategory = category;
@@ -73,7 +72,7 @@ public class AnalyticsModel {
     }
 
     public AnalyticsModel(@NonNull String section) {
-        this(section, null, null);
+       mSection = section;
     }
 
     public AnalyticsModel(
